@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Github Shipit",
+  "description": "This extension makes it easier to approve Github pull requests",
+  "version": "1.0",
+
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [{
+    "js": [ "jquery-2.1.4.min.js", "background.js" ],
+    "matches": [ "https://github.com/*"]
+  }]
+}
